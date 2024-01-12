@@ -1,0 +1,10 @@
+/* ========================================= */
+/* ------------- Global styling */
+/* ========================================= */
+
+body {
+    max-width: 1100px;
+}
+
+/* temporary code to make image smaller */
+main img { max-width: 300px }
