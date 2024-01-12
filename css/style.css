@@ -4,7 +4,29 @@
 
 body {
     max-width: 1100px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* temporary code to make image smaller */
 main img { max-width: 300px }
+/* remove this ^ later */
+
+/**/
+/**/
+/* ========================================= */
+/* -------- header/main/footer styling */
+/* ========================================= */
+
+header, footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#section-one, #section-two {
+    display: flex;
+    flex-direction: row;
+}
+
+
