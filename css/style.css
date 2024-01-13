@@ -45,3 +45,8 @@ header, footer {
     border-bottom: solid 1px hsl(40, 50%, 60%);
 }
 
+@media screen and (max-width: 800px) {
+    #section-one, #section-two {
+        flex-direction: column;
+    }
+}
