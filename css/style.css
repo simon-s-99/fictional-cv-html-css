@@ -23,7 +23,9 @@ main {
 }
 
 /* temporary code to make image smaller */
-main img { max-width: 300px }
+main img {
+    max-width: 300px
+}
 /* remove this ^ later */
 
 /**/
@@ -32,13 +34,15 @@ main img { max-width: 300px }
 /* ------ header/main-content/footer styling */
 /* ========================================= */
 
-header, footer {
+header,
+footer {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-#section-one, #section-two {
+#section-one,
+#section-two {
     display: flex;
     flex-direction: row;
     border-top: solid 1px hsl(40, 50%, 60%);
@@ -48,7 +52,9 @@ header, footer {
 /* changes flex to column when width gets 
     smaller than 800px*/
 @media screen and (max-width: 800px) {
-    #section-one, #section-two {
+
+    #section-one,
+    #section-two {
         flex-direction: column;
     }
 }
@@ -58,3 +64,4 @@ br {
     content: ""; /* to clear default height */
     margin-top: 1em;
 }
+
