@@ -59,7 +59,7 @@ footer {
     }
 }
 
-br {
+#section-one br {
     display: block;
     content: ""; /* to clear default height */
     margin-top: 1em;
