@@ -45,8 +45,16 @@ header, footer {
     border-bottom: solid 1px hsl(40, 50%, 60%);
 }
 
+/* changes flex to column when width gets 
+    smaller than 800px*/
 @media screen and (max-width: 800px) {
     #section-one, #section-two {
         flex-direction: column;
     }
+}
+
+br {
+    display: block;
+    content: ""; /* to clear default height */
+    margin-top: 1em;
 }
