@@ -50,8 +50,17 @@ footer {
     max-width: 25em;
 }
 
-#section-two ul {
+#section-two div {
+    flex-basis: 35%;
+}
+
+#section-two div:last-child {
+    flex-basis: 65%;
+}
+
+#section-two li {
     list-style: square;
+    margin-bottom: 0.4em;
 }
 
 /* changes flex to column when width gets 
