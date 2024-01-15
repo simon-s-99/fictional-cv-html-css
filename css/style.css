@@ -32,6 +32,7 @@ footer {
 #section-two {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     border-top: solid 1px hsl(40, 50%, 60%);
     border-bottom: solid 1px hsl(40, 50%, 60%);
 }
@@ -45,6 +46,10 @@ footer {
 #section-one img {
     padding: 0.8em;
     max-width: 25em;
+}
+
+#section-two ul {
+    list-style: square;
 }
 
 /* changes flex to column when width gets 
