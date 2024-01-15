@@ -12,6 +12,8 @@ body {
 }
 
 main {
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: hsl(40, 100%, 85%);
 }
 
