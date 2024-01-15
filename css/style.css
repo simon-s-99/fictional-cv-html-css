@@ -48,6 +48,10 @@ footer {
 #section-one img {
     padding: 0.8em;
     max-width: 25em;
+    /* so that image does not stretch as
+        text expands downward when window is 
+        resized */
+    max-height: 480px;
 }
 
 #section-two h2 {
