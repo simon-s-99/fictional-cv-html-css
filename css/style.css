@@ -2,13 +2,6 @@
 /* ------------- Global styling */
 /* ========================================= */
 
-/* vv from example.txt vv 
-hsl(40, 50%, 60%) site background
-hsl(40, 100%, 85%) site foreground
-hsl(40, 100%, 35%) winner text
-hsl(0, 0%, 50%) nominee text 
-*/
-
 body {
     max-width: 60em;
     margin: auto;
