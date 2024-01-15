@@ -22,12 +22,6 @@ main {
     background-color: hsl(40, 100%, 85%);
 }
 
-/* temporary code to make image smaller */
-main img {
-    max-width: 300px
-}
-/* remove this ^ later */
-
 /**/
 /**/
 /* ========================================= */
@@ -49,6 +43,17 @@ footer {
     border-bottom: solid 1px hsl(40, 50%, 60%);
 }
 
+#section-one br {
+    display: block;
+    content: ""; /* to clear default height */
+    margin-top: 1em;
+}
+
+#section-one img {
+    padding: 0.8em;
+    max-width: 25em;
+}
+
 /* changes flex to column when width gets 
     smaller than 800px*/
 @media screen and (max-width: 800px) {
@@ -57,11 +62,11 @@ footer {
     #section-two {
         flex-direction: column;
     }
-}
 
-#section-one br {
-    display: block;
-    content: ""; /* to clear default height */
-    margin-top: 1em;
+    /* centers image in column layout */
+    #section-one img {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
