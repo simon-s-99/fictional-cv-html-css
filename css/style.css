@@ -33,13 +33,6 @@ body {
             border-top: solid 1px hsl(40, 50%, 60%);
             border-bottom: solid 1px hsl(40, 50%, 60%);
 
-            br {
-                /* to clear default height */
-                display: block;
-                content: "";
-                margin-top: 1em;
-            }
-
             img {
                 padding: 0.8em;
                 max-width: 25em;
