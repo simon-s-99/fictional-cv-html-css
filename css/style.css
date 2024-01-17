@@ -1,5 +1,5 @@
 /* ========================================= */
-/* ------------- Global styling */
+/* ------------- nested styling */
 /* ========================================= */
 
 body {
@@ -9,81 +9,85 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: hsl(40, 100%, 85%);
+
+        header {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            h1 {
+                font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+                font-weight: 500;
+            }
+        }
+
+        #section-one {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            border-top: solid 1px hsl(40, 50%, 60%);
+            border-bottom: solid 1px hsl(40, 50%, 60%);
+
+            br {
+                /* to clear default height */
+                display: block;
+                content: "";
+                margin-top: 1em;
+            }
+
+            img {
+                padding: 0.8em;
+                max-width: 25em;
+                /* so that image does not stretch as
+                    text expands downward when window is 
+                    resized */
+                max-height: 480px;
+            }
+        }
+
+        #section-two {
+            h2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            div {
+                flex: 3.5;
+            }
+
+            div:last-child {
+                flex: 6.5;
+            }
+
+            li {
+                list-style: square;
+                margin-bottom: 0.4em;
+            }
+        }
+
+        footer {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-bottom: 1.5em;
+        }
+    }
 }
 
-main {
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: hsl(40, 100%, 85%);
-}
-
-/**/
-/**/
 /* ========================================= */
-/* ------ header/main-content/footer styling */
+/* ------ @media queries */
 /* ========================================= */
-
-main header h1 {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-weight: 500;
-}
-
-header,
-footer {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-main section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    border-top: solid 1px hsl(40, 50%, 60%);
-    border-bottom: solid 1px hsl(40, 50%, 60%);
-    
-    br {
-        display: block;
-        content: ""; /* to clear default height */
-        margin-top: 1em;
-    }
-    
-    img {
-        padding: 0.8em;
-        max-width: 25em;
-        /* so that image does not stretch as
-            text expands downward when window is 
-            resized */
-        max-height: 480px;
-    }
-}
-
-
-#section-two {
-    h2 {
-        display: flex;
-        justify-content: center;
-    }
-    
-    div {
-        flex: 3.5;
-    }
-    
-    div:last-child {
-        flex: 6.5;
-    }
-    
-    li {
-        list-style: square;
-        margin-bottom: 0.4em;
-    }
-}
 
 /* changes flex to column when width gets 
     smaller than 800px*/
 @media screen and (max-width: 800px) {
 
-    main section {
+    main #section-one, main #section-two {
         flex-direction: column;
     }
 
@@ -92,9 +96,5 @@ main section {
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-footer {
-    padding-bottom: 1.5em;
 }
 
