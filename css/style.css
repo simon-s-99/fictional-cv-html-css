@@ -1,3 +1,4 @@
+/* ============= CSS Reset ================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,6 +26,7 @@ body {
             margin-left: auto;
             margin-right: auto;
             text-align: center;
+            border-bottom: solid 1px hsl(40, 50%, 60%);
 
             h1 {
                 font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -35,10 +37,11 @@ body {
         }
 
         #section-one {
+            /* I am specifically NOT using flex-direction: row here
+                so that the media querys flex-direction: column
+                takes precedence. */
             display: flex;
-            flex-direction: row;
             flex-wrap: nowrap;
-            border-top: solid 1px hsl(40, 50%, 60%);
             border-bottom: solid 1px hsl(40, 50%, 60%);
 
             img {
@@ -60,10 +63,13 @@ body {
         }
 
         #section-two {
+            /* I am specifically NOT using flex-direction: row here
+                so that the media querys flex-direction: column
+                takes precedence. */
             display: flex;
-            flex-direction: row;
             flex-wrap: nowrap;
             justify-content: center;
+            border-bottom: solid 1px hsl(40, 50%, 60%);
 
             h2 {
                 display: flex;
@@ -90,6 +96,10 @@ body {
                 list-style: square;
                 margin-bottom: 0.4em;
             }
+
+            li:last-child {
+                padding-bottom: 10px;
+            }
         }
 
         footer {
@@ -97,6 +107,10 @@ body {
             margin-right: auto;
             text-align: center;
             padding-bottom: 1.5em;
+
+            h2 {
+                padding-top: 0.3em;
+            }
         }
     }
 }
@@ -111,11 +125,10 @@ body {
 
     main section {
         flex-direction: column;
-    }
 
-    /* centers image in column layout */
-    section img {
-        margin-left: auto;
-        margin-right: auto;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
