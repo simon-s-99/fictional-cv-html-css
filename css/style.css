@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* ========================================= */
 /* ------------- nested styling */
 /* ========================================= */
@@ -23,6 +29,8 @@ body {
             h1 {
                 font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
                 font-weight: 500;
+                padding-top: 0.1em;
+                padding-bottom: 0.2em;
             }
         }
 
@@ -34,19 +42,36 @@ body {
             border-bottom: solid 1px hsl(40, 50%, 60%);
 
             img {
-                padding: 0.8em;
+                padding-left: 0.3em;
+                padding-right: 0.8em;
+                padding-top: 0.8em;
+                padding-bottom: 0.8em;
                 max-width: 25em;
                 /* so that image does not stretch as
                     text expands downward when window is 
                     resized */
                 max-height: 480px;
             }
+
+            p {
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+            }
         }
 
         #section-two {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+
             h2 {
                 display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
                 justify-content: center;
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
             }
 
             div {
@@ -55,6 +80,10 @@ body {
 
             div:last-child {
                 flex: 6.5;
+            }
+
+            ul {
+                padding-left: 25px;
             }
 
             li {
@@ -80,7 +109,7 @@ body {
     smaller than 800px*/
 @media screen and (max-width: 800px) {
 
-    main #section-one, main #section-two {
+    main section {
         flex-direction: column;
     }
 
@@ -90,4 +119,3 @@ body {
         margin-right: auto;
     }
 }
-
